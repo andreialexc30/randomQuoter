@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>randomQuoter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="newQuote()">
+    <nav class="quoternav">
+        <ul class=quoternav__list>
+            <li class="quoternav__list__item">
+                <a href="" class="list-item__link">About</a>
+            </li>
+            <li class="quoternav__list__item">
+                <a href="" class="list-item__link">Quotes</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="quote_wrapper">
+        <div class="quote__wrapper__title">
+            <h1>randomQuoter</h1>
+        </div>
+        <div id="quoteDisplay" class="quote__wrapper__display">
+            <!-- Quotes display here -->
+            <p>“The best way to get started is to quit talking and begin doing.” <br/>– Walt Disney</p>
+        </div>
+        <button class="quote__wrapper__btn" onclick="newQuote()">New Quote</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content__wrap">
+            <ul class="footer__list">
+                <li class="footer__list__item">
+                    <a href="" class="footer__list__link">MAIL</a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="" class="footer__list__link">DISCORD</a>
+                </li>
+            </ul>
+            <span class="footer__wrap__span">Created by - Andrei Caia</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
