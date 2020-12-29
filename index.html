@@ -12,14 +12,13 @@
     <nav class="quoternav">
         <ul class=quoternav__list>
             <li class="quoternav__list__item">
-                <a href="" class="list-item__link">About</a>
+                <a href="pages/info.html" class="list-item__link">Info</a>
             </li>
             <li class="quoternav__list__item">
                 <a href="" class="list-item__link">Quotes</a>
             </li>
         </ul>
     </nav>
-    
     <div class="quote_wrapper">
         <div class="quote__wrapper__title">
             <h1>randomQuoter</h1>
@@ -28,23 +27,18 @@
             <!-- Quotes display here -->
             <p>“The best way to get started is to quit talking and begin doing.” <br/>– Walt Disney</p>
         </div>
-        <button class="quote__wrapper__btn" onclick="newQuote()">New Quote</button>
+        <button class="quote__wrapper__btn" onclick="newQuote()">generate Quote</button>
+        <div class="secondary__btns">
+            <button class="secondary__btns__life secondary-quote-btns" onclick="lifeQuote()">life Quote</button>
+            <button class="secondary__btns__gaming secondary-quote-btns" onclick="gamingQuote()">gaming Quote</button>
+            <button class="secondary__btns__movies secondary-quote-btns" onclick="movieQuote()">movie Quote</button>
+        </div>
     </div>
-
     <footer class="footer">
         <div class="footer__content__wrap">
-            <ul class="footer__list">
-                <li class="footer__list__item">
-                    <a href="" class="footer__list__link">MAIL</a>
-                </li>
-                <li class="footer__list__item">
-                    <a href="" class="footer__list__link">DISCORD</a>
-                </li>
-            </ul>
-            <span class="footer__wrap__span">Created by - Andrei Caia</span>
+            <span class="footer__wrap__span">Created by - <a href="https://github.com/andreialexc30" class="list-item__link">Andrei Caia</a></span>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
