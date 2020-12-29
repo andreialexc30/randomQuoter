@@ -40,6 +40,7 @@ a:hover {
     margin: 0 auto;
     background: transparent;
     font-size: 20px;
+    height: 100px;
 }
 
 .quoternav__list {
@@ -53,12 +54,11 @@ a:hover {
 }
 
 .quoternav__list__item {
-    padding: 10px;
+    padding: 20px;
 }
 
 .list-item__link {
     text-decoration: none;
-    padding: 10px;
 }
 
 /* Quote generator styling */
@@ -66,6 +66,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: #20202073;
 }
 
 .quote__wrapper__title, .quote__wrapper_display, .quote__wrapper__btn {
@@ -99,6 +100,30 @@ a:hover {
     cursor: pointer;
     transition: 450ms;
     letter-spacing: 1.2px;
+}
+
+.secondary__btns {
+    margin: 0 auto;
+    padding: 2.5em;
+}
+
+.secondary-quote-btns {
+    background: #ffffff;
+    border-radius: 250px;
+    font-size: 18px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.938);
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: 450ms;
+    letter-spacing: 1.2px;
+    margin: .5em;
+    border: none;
+}
+
+.secondary-quote-btns:hover {
+    background: #9869dd;
+
 }
 
 .quote__wrapper__btn:hover{
@@ -145,4 +170,78 @@ a:hover {
 .footer__wrap__span {
     text-align: center;
     font-size: 20px;
+    margin: 5px;
+}
+
+/* Info page styling */
+
+/* Info container styling */
+.info__container {
+    width: 100%;
+}
+
+.info__container__head {
+    margin: 0 auto;
+    background: #282626eb;
+    width: 50%;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px 1px black;
+}
+
+.info__container__head-title {
+    margin: 0 auto;
+    height: 100px;
+    line-height: 190px;
+}
+
+#head-title {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: .25px;
+}
+
+/* Information container styling */
+.info__container__information {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    background: #282626eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px 1px black;
+}
+
+#info-title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: .5px;
+}
+
+.info__container__information-details {
+    width: 80%;
+}
+
+.details-text {
+    font-size: 19px;
+    line-height: 28px;
+}
+
+/* Info list styling */
+.info-list {
+    font-size: 25px;
+    list-style: none;
+}
+
+.info-list__item {
+    margin: 12px 0px 12px 0px;
+}
+
+.info-list__item_link {
+    text-decoration: none;
 }
