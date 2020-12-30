@@ -79,7 +79,7 @@ a:hover {
 }
 
 .quote__wrapper__display {
-    padding-bottom: 2em;
+    padding-top: 1em;
     font-size: 25px;
     font-family: var(--ff-quotes);
     text-align: center;
@@ -94,7 +94,7 @@ a:hover {
     border-radius: 250px;
     font-size: 22px;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.938);
-    border: 2px solid;
+    border: none;
     padding: 10px;
     width: 200px;
     cursor: pointer;
@@ -184,7 +184,6 @@ a:hover {
     margin: 0 auto;
     background: #282626eb;
     width: 50%;
-    height: 250px;
     border: 2px solid;
     border-radius: 5px;
     box-shadow: 2px 2px 25px 1px black;
@@ -193,7 +192,7 @@ a:hover {
 .info__container__head-title {
     margin: 0 auto;
     height: 100px;
-    line-height: 190px;
+    line-height: 60px;
 }
 
 #head-title {
@@ -244,4 +243,42 @@ a:hover {
 
 .info-list__item_link {
     text-decoration: none;
+}
+
+/* Quotes page styling */
+
+/* Quotes container */
+.quote__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    background: #282626eb;
+}
+
+.quote__container__lifeQuotes {
+    margin-left: 1em;
+}
+
+.quote__container__movieQuotes {
+    margin-right: 1em;
+}
+
+.quote__container__lifeQuotes, .quote__container__gamingQuotes, .quote__container__movieQuotes {
+    width: 33.33%;
+}
+
+.lifeQuotes__title, .gamingQuotes__title, .movieQuotes__title {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 2px solid;
+}
+
+.lifeQuotes__list, .gamingQuotes__list, .movieQuotes__list {
+    list-style: none;
+}
+
+.lifeQuotes__list__item, .gamingQuotes__list__item, .movieQuotes__list__item {
+    margin-bottom: 10px;
 }
