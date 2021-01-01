@@ -67,6 +67,7 @@ a:hover {
     flex-direction: column;
     width: 100%;
     background: #20202073;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 .quote__wrapper__title, .quote__wrapper_display, .quote__wrapper__btn {
@@ -254,6 +255,7 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     background: #282626eb;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 .quote__container__lifeQuotes {
