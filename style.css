@@ -179,6 +179,7 @@ a:hover {
 /* Info container styling */
 .info__container {
     width: 100%;
+    padding: 10px;
 }
 
 .info__container__head {
@@ -286,7 +287,7 @@ a:hover {
 }
 
 /* Media queries */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px){
     .quote__wrapper__title {
         font-size: 25px;
     }
@@ -303,7 +304,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
     .info__container__head, .info__container__information {
         width: 80%;
     }
@@ -326,7 +327,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
     .quote__container {
         flex-direction: column;
     }
