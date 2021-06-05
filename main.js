@@ -37,14 +37,24 @@ let movieQuotes = [
     '"My mama always said life was like a box of chocolates. You never know what you\'re gonna get." – Forrest Gump(1994)'
 ]
 
+// select elements
 let display = document.getElementById('quoteDisplay')
-let author = document.getElementById('author')
+let authorDisplay = document.getElementById('author')
 const genBtn = document.getElementById('genBtn')
+const lifeBtn = document.querySelector('.secondary__btns__life')
+const gameBtn = document.querySelector('.secondary__btns__gaming')
+const movieBtn = document.querySelector('.secondary__btns__movies')
 const quoteBtn = document.getElementById('genBtn')
 const spinner = document.getElementById('js-spinner')
 const endpoint = 'https://free-quotes-api.herokuapp.com/'
-genBtn.addEventListener('click', getQuote)
 
+// click
+genBtn.addEventListener('click', getQuote)
+lifeBtn.addEventListener('click', lifeQuote)
+gameBtn.addEventListener('click', gamingQuote)
+movieBtn.addEventListener('click', movieQuote)
+
+// Functions
 async function getQuote() {
     quoteBtn.disabled = true
 
@@ -55,7 +65,7 @@ async function getQuote() {
             return response.json()
         }
     }).then(data => {
-        displayQuote(data.quote)
+        displayQuote(data.quote, data.author)
     }).catch(err => {
         console.error(err)
     })
@@ -63,21 +73,31 @@ async function getQuote() {
     quoteBtn.disabled = false
 }
 
-function displayQuote(quote) {
+function displayQuote(quote, author) {
+    const noAuth = 'Unknown'
+
     display.textContent = quote
+
+    if(author === '') {
+        return authorDisplay.textContent = noAuth
+    }
+    authorDisplay.textContent = author
 }
 
 function lifeQuote() {
     let randomNumber = Math.floor(Math.random() * (lifeQuotes.length))
     display.innerHTML = lifeQuotes[randomNumber]
+    authorDisplay.textContent = ' '
 }
 
 function gamingQuote() {
     let randomNumber = Math.floor(Math.random() * (gamingQuotes.length))
     display.innerHTML = gamingQuotes[randomNumber]
+    authorDisplay.textContent = ' '
 }
 
 function movieQuote() {
     let randomNumber = Math.floor(Math.random() * (movieQuotes.length))
     display.innerHTML = movieQuotes[randomNumber]
+    authorDisplay.textContent = ' '
 }
