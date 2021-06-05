@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="newQuote()">
+<body>
     <!-- Navigation -->
     <nav class="quoternav">
         <ul class=quoternav__list>
@@ -25,22 +25,36 @@
         </ul>
     </nav>
     <!-- Main -->
-    <div class="quote_wrapper">
+    <main class="quote_wrapper">
         <div class="quote__wrapper__title">
             <h1>randomQuoter</h1>
         </div>
         <div id="quoteDisplay" class="quote__wrapper__display">
+            <!-- <div id="js-spinner" class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+              </div> -->
             <!-- Quotes display here -->
         </div>
         <!-- Generate quote -->
-        <button class="quote__wrapper__btn" onclick="newQuote()">generate Quote</button>
+        <button id="genBtn" class="quote__wrapper__btn">generate Quote</button>
         <!-- Secondary buttons -->
         <div class="secondary__btns">
             <button class="secondary__btns__life secondary-quote-btns" onclick="lifeQuote()">life Quote</button>
             <button class="secondary__btns__gaming secondary-quote-btns" onclick="gamingQuote()">gaming Quote</button>
             <button class="secondary__btns__movies secondary-quote-btns" onclick="movieQuote()">movie Quote</button>
         </div>
-    </div>
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__content__wrap">
