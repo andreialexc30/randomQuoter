@@ -46,6 +46,7 @@ const gameBtn = document.querySelector('.secondary__btns__gaming')
 const movieBtn = document.querySelector('.secondary__btns__movies')
 const quoteBtn = document.getElementById('genBtn')
 const spinner = document.getElementById('js-spinner')
+const loader = document.querySelector('#loadingIcon')
 const endpoint = 'https://free-quotes-api.herokuapp.com/'
 
 // click
@@ -55,9 +56,20 @@ gameBtn.addEventListener('click', gamingQuote)
 movieBtn.addEventListener('click', movieQuote)
 
 // Functions
-async function getQuote() {
-    quoteBtn.disabled = true
+function displayLoading() {
+    loader.classList.add('display')
 
+    setTimeout(() => {
+        loader.classList.remove('display')
+    }, 5000)
+}
+
+function hideLoading() {
+    loader.classList.remove('display')
+}
+
+async function getQuote() {
+    displayLoading()
     fetch(endpoint).then(response => {
         if(response.status !== 200) {
             return null
@@ -65,12 +77,11 @@ async function getQuote() {
             return response.json()
         }
     }).then(data => {
+        hideLoading()
         displayQuote(data.quote, data.author)
     }).catch(err => {
         console.error(err)
     })
-
-    quoteBtn.disabled = false
 }
 
 function displayQuote(quote, author) {
