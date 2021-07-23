@@ -45,7 +45,6 @@ const lifeBtn = document.querySelector('.secondary__btns__life')
 const gameBtn = document.querySelector('.secondary__btns__gaming')
 const movieBtn = document.querySelector('.secondary__btns__movies')
 const quoteBtn = document.getElementById('genBtn')
-const spinner = document.getElementById('js-spinner')
 const loader = document.querySelector('#loadingIcon')
 const endpoint = 'https://free-quotes-api.herokuapp.com/'
 
