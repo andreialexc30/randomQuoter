@@ -68,6 +68,7 @@ a:hover {
     width: 100%;
     background: #20202073;
     box-shadow: 1px 1px 10px 1px black;
+    min-height: 100vh;
 }
 
 .quote__wrapper__title, .quote__wrapper_display, .quote__wrapper__btn {
