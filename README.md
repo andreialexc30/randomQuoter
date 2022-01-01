@@ -5,4 +5,5 @@ This web based quote generator allows users to pick from 30 predefined quotes fr
 
 <h3>Live version</h3>
 Vue version: https://github.com/andreialexc30/quoterVue
+<br />
 Available at: https://andreialexc30.github.io/randomQuoter/
